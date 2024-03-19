@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <p>The current value is: <span id="counter">0</span></p>
+    <input type="button" id="clickButton" value="Click Counter" /> <br />
+
+    <script type="text/javascript">
+        document.getElementById('clickButton').addEventListener('click', function() {
+            let counterValue = parseInt(document.getElementById('counter').innerText);
+            document.getElementById('counter').innerText = counterValue + 1;
+        });
+    </script>
+</body>
+
+</html>

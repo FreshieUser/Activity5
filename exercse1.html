@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <h1 id="title">HTML Dynamic</h1>
+    <hr>
+    <a href="https://www.example.com" id="link">Visit Example</a>
+    <img src="one.png" alt="Sample Image" id="image">
+    <button id="btn">Click Me</button>
+    <hr>
+<script type="text/javascript">
+	document.getElementById('btn').addEventListener('click', function() {
+    document.getElementById('title').innerText = 'Welcome Navigator';
+    document.getElementById('link').href = 'https://www.google.com';
+    document.getElementById('link').innerText = 'https://www.geeksforgeeks.org/create-geeksforgeeks-logo-using-html-and-css/';
+    document.getElementById('image').src = 'two.png';
+    document.getElementById('image').alt = 'New Image';
+    document.getElementById('btn').innerText = 'Button Clicked';
+});
+</script>
+</body>
+</html>
